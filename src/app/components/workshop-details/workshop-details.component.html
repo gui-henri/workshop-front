@@ -1,0 +1,17 @@
+<main class="page">
+    <div class="h-spacer"></div>
+    <div class="content">
+        <h1 class="page-title">Collaborators</h1>
+        <div class="h-spacer"></div>
+        <div>
+            <div class="h-spacer"></div>
+            @for (item of collaborators; track $index) {
+            <mat-card class="card">
+                <mat-card-content class="card-content">
+                    {{ item.name }}
+                </mat-card-content>
+            </mat-card>
+            }
+        </div>
+    </div>
+</main>

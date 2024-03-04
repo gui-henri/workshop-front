@@ -1,0 +1,45 @@
+<main class="page">
+    <div class="h-spacer"></div>
+    <div class="content">
+        <div class="header">
+            <h1 class="page-title">Workshops</h1>
+        </div>
+        <div class="h-spacer"></div>
+        <h2>Create New</h2>
+        <form (submit)="sendWorkshop()" class="input-form">
+            <mat-form-field>
+                <mat-label>Add a name</mat-label>
+                <input matInput placeholder="Ex. Workshop do verão" [(ngModel)]="newWorkshop.name" name="name">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Add a date(yyyy-mm-dd)</mat-label>
+                <input matInput placeholder="Ex. 2024-09-24" [(ngModel)]="newWorkshop.date" name="date">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Add a description</mat-label>
+                <input matInput placeholder="Ex. Venha se divertir!" [(ngModel)]="newWorkshop.description"
+                    name="description">
+            </mat-form-field>
+            <div>
+                <button type="submit" mat-fab extended color="primary">
+                    <mat-icon>add</mat-icon>
+                    Add
+                </button>
+            </div>
+        </form>
+        <div>
+            <div class="h-spacer"></div>
+            @for (item of workshops; track $index) {
+            <mat-card class="card" [routerLink]="['/workshop', item.id]">
+                <mat-card-header>
+                    <mat-card-title>{{ item.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ item.date }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content class="card-content">
+                    {{ item.description }}
+                </mat-card-content>
+            </mat-card>
+            }
+        </div>
+    </div>
+</main>
