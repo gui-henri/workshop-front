@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.page {
+    background-color: rgba(124, 77, 255, 0.2);
+    height: 100%;
+}
+
+.toolbar {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.input-form {
+    display: flex;
+    gap: 2rem;
+}
+
+.add-button {
+    margin: 16px;
+}
+
+.toolbar-title {
+    margin: 0.5rem;
+}
+
+.page-title {
+    margin: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.h-spacer {
+    height: 1rem;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.content {
+    margin: 1rem;
+}
+
+.card {
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    font-size: larger;
+}
+
+.menu-button {
+    margin: 0.5rem;
+}
