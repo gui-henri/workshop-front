@@ -1,37 +1,8 @@
-<main class="page">
-    <mat-toolbar color="primary" class="toolbar">
-        <mat-icon>work</mat-icon>
-        <span class="toolbar-title">Workshopee</span>
-        <span class="spacer"></span>
-        <button class="menu-button" color="accent" mat-flat-button routerLink="/">Collaborators</button>
-        <button class="menu-button" color="accent" mat-flat-button routerLink="/workshops">Workshops</button>
-    </mat-toolbar>
-    <div class="h-spacer"></div>
-    <div class="content">
-        <h1 class="page-title">Collaborators</h1>
-        <div class="h-spacer"></div>
-        <div class="input-form">
-            <mat-form-field class="full-width">
-                <mat-label>Add new collaborator</mat-label>
-                <input matInput placeholder="Ex. Maria Clara" value="">
-            </mat-form-field>
-            <button mat-fab extended color="primary">
-                <mat-icon>add</mat-icon>
-                Add
-            </button>
-        </div>
-        <div>
-            <div class="h-spacer"></div>
-            <mat-card class="card">
-                <mat-card-content class="card-content">
-                    Melissa
-                </mat-card-content>
-            </mat-card>
-            <mat-card class="card">
-                <mat-card-content class="card-content">
-                    Guilherme
-                </mat-card-content>
-            </mat-card>
-        </div>
-    </div>
-</main>
+<mat-toolbar color="primary" class="toolbar">
+    <mat-icon>work</mat-icon>
+    <span class="toolbar-title">Workshopee</span>
+    <span class="spacer"></span>
+    <button class="menu-button" color="accent" mat-flat-button routerLink="/">Collaborators</button>
+    <button class="menu-button" color="accent" mat-flat-button routerLink="/workshops">Workshops</button>
+</mat-toolbar>
+<app-collaborators></app-collaborators>

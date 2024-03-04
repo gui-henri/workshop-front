@@ -1,0 +1,29 @@
+<main class="page">
+    <div class="h-spacer"></div>
+    <div class="content">
+        <h1 class="page-title">Collaborators</h1>
+        <div class="h-spacer"></div>
+        <form (submit)="sendCollaborator()" class="input-form">
+            <mat-form-field class="full-width">
+                <mat-label>Add new collaborator</mat-label>
+                <input matInput placeholder="Ex. Maria Clara" [(ngModel)]="newCollaborator.name" name="name">
+            </mat-form-field>
+            <div>
+                <button type="submit" mat-fab extended color="primary">
+                    <mat-icon>add</mat-icon>
+                    Add
+                </button>
+            </div>
+        </form>
+        <div>
+            <div class="h-spacer"></div>
+            @for (item of collaborators; track $index) {
+            <mat-card class="card">
+                <mat-card-content class="card-content">
+                    {{ item.name }}
+                </mat-card-content>
+            </mat-card>
+            }
+        </div>
+    </div>
+</main>
